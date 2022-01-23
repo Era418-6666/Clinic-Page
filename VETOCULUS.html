@@ -16,7 +16,104 @@
     <h4>Heading 4</h4>
     <h5>Heading 5</h5>
     <h6>Heading 6</h6>
-
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      /* Style the header */
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+      
+      /* Container for flexboxes */
+      section {
+        display: -webkit-flex;
+        display: flex;
+      }
+      
+      /* Style the navigation menu */
+      nav {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background: #ccc;
+        padding: 20px;
+      }
+      
+      /* Style the list inside the menu */
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      /* Style the content */
+      article {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background-color: #f1f1f1;
+        padding: 10px;
+      }
+      
+      /* Style the footer */
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+      
+      /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+      @media (max-width: 600px) {
+        section {
+          -webkit-flex-direction: column;
+          flex-direction: column;
+        }
+      }
+      </style>
+      </head>
+      <body>
+      
+      <h2>ENGİN KOÇAN CV</h2>
+      <p>A brief explanation of my personal career and illustrative activities that I participated.</p>
+      <p>Veterinary Medicine but <strong>also </strong> a Food Safety Expert.(JNKE)</p>
+      <p><strong>Member of EFSA</strong> Assist to EFSA members, SNKE's during their missions .</p>
+      
+      <header>
+        <h2>Schools</h2>
+      </header>
+      
+      <section>
+        <nav>
+          <ul>
+            <li><a href="#">Güzelyurt Kurtuluş Primary School</a></li>
+            <li><a href="#">NEC (YDK)</a></li>
+            <li><a href="#">TMC (TMK)</a></li>
+            <li><a href="#">Ankara University</a></li>
+            <li><a href="#">CIU (UKÜ)</a></li>
+          </ul>
+        </nav>
+        
+        <article>
+          <h1>Ankara University</h1>
+          <p></p>
+          <p></p>
+        </article>
+      </section>
+      
+      <footer>
+        <p>Footer</p>
+      </footer>
+      
 
     <html>
         <head>
